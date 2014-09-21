@@ -15,7 +15,7 @@
 		0C81114119CF27C5004952C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C81113F19CF27C5004952C3 /* LaunchScreen.xib */; };
 		0C81114D19CF27C5004952C3 /* OTCoverDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C81114C19CF27C5004952C3 /* OTCoverDemoTests.m */; };
 		0C81115919CF29EC004952C3 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C81115619CF29EC004952C3 /* image.png */; };
-		0C81115A19CF29EC004952C3 /* OTCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C81115819CF29EC004952C3 /* OTCover.m */; };
+		0C81115E19CF2C60004952C3 /* OTCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C81115D19CF2C60004952C3 /* OTCover.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +43,8 @@
 		0C81114B19CF27C5004952C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C81114C19CF27C5004952C3 /* OTCoverDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTCoverDemoTests.m; sourceTree = "<group>"; };
 		0C81115619CF29EC004952C3 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
-		0C81115719CF29EC004952C3 /* OTCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCover.h; sourceTree = "<group>"; };
-		0C81115819CF29EC004952C3 /* OTCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCover.m; sourceTree = "<group>"; };
+		0C81115C19CF2C60004952C3 /* OTCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTCover.h; path = ../../OTCover/OTCover.h; sourceTree = "<group>"; };
+		0C81115D19CF2C60004952C3 /* OTCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTCover.m; path = ../../OTCover/OTCover.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +129,8 @@
 		0C81115B19CF2A01004952C3 /* OTCover */ = {
 			isa = PBXGroup;
 			children = (
-				0C81115719CF29EC004952C3 /* OTCover.h */,
-				0C81115819CF29EC004952C3 /* OTCover.m */,
+				0C81115C19CF2C60004952C3 /* OTCover.h */,
+				0C81115D19CF2C60004952C3 /* OTCover.m */,
 			);
 			name = OTCover;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 			files = (
 				0C81113919CF27C5004952C3 /* ViewController.m in Sources */,
 				0C81113619CF27C5004952C3 /* AppDelegate.m in Sources */,
-				0C81115A19CF29EC004952C3 /* OTCover.m in Sources */,
+				0C81115E19CF2C60004952C3 /* OTCover.m in Sources */,
 				0C81113319CF27C5004952C3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
