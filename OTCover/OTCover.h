@@ -9,13 +9,16 @@
 #import <UIKit/UIKit.h>
 #define OTCoverViewHeight 200
 
-@interface OTCover : UIView<UIScrollViewDelegate>
+@interface OTCover : UIView<UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UIScrollView* scrollView;
 @property (nonatomic, strong) UIImageView* headerImageView;
 @property (nonatomic, strong) UIView* scrollContentView;
+@property (nonatomic, strong) UITableView* tableView;
 
 - (OTCover*)initWithHeaderImage:(UIImage*)headerImage withContentHeight:(CGFloat)contentHeight;
+- (OTCover*)initTableViewOTCoverWithHeaderImage:(UIImage*)headerImage;
+//- (OTCover*)initWithScrollView:(UIScrollView*)scrollView WithHeaderImage:(UIImage*)headerImage;
 - (void)setHeaderImage:(UIImage *)headerImage;
 
 @end

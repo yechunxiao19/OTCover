@@ -14,19 +14,27 @@
 @end
 
 @implementation ViewController
+{
+    UIScrollView *scrollView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    OTCover *test = [[OTCover alloc] initWithHeaderImage:[UIImage imageNamed:@"image.png"] withContentHeight:4000];
-    [self.view addSubview:test];
-    [test setHeaderImage:[UIImage imageNamed:@"image.png"]];
+//    OTCover *test = [[OTCover alloc] initWithHeaderImage:[UIImage imageNamed:@"image.png"] withContentHeight:4000];
+//    [self.view addSubview:test];
+//    [test setHeaderImage:[UIImage imageNamed:@"image.png"]];
+//    
+//    UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 40)];
+//    nameLabel.text = @"OTMediumCover";
+//    nameLabel.font = [UIFont fontWithName:@"Arial" size:30];
+//    nameLabel.textAlignment =  NSTextAlignmentCenter;
+//    [test.scrollContentView addSubview:nameLabel];
     
-    UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 40)];
-    nameLabel.text = @"OTMediumCover";
-    nameLabel.font = [UIFont fontWithName:@"Arial" size:30];
-    nameLabel.textAlignment =  NSTextAlignmentCenter;
-    [test.scrollContentView addSubview:nameLabel];
+    
+    OTCover *test = [[OTCover alloc] initTableViewOTCoverWithHeaderImage:[UIImage imageNamed:@"image.png"]];
+    [self.view addSubview:test];
+    
 }
 
 - (void)didReceiveMemoryWarning {
