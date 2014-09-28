@@ -161,6 +161,16 @@
     [super removeFromSuperview];
 }
 
+- (void)dealloc
+{
+    if (self.tableView) {
+        [self.tableView removeObserver:self forKeyPath:@"contentOffset"];
+    }
+    else{
+        [self.scrollView removeObserver:self forKeyPath:@"contentOffset"];
+    }
+}
+
 @end
 
 //from https://github.com/cyndibaby905/TwitterCover
