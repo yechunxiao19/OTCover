@@ -16,7 +16,7 @@
 @property (nonatomic, strong) UIImageView* headerImageView;
 @property (nonatomic, strong) UITableView* tableView;
 
-- (OTCover*)initWithTableViewWithHeaderImage:(UIImage*)headerImage withOTCoverHeight:(CGFloat)height;
+- (OTCover*)initWithTableViewWithHeaderImage:(UIImage*)headerImage withOTCoverHeight:(CGFloat)height withTableViewStyle:(UITableViewStyle)TableViewStyle;
 - (OTCover*)initWithScrollViewWithHeaderImage:(UIImage*)headerImage withOTCoverHeight:(CGFloat)height withScrollContentViewHeight:(CGFloat)height;
 - (void)setHeaderImage:(UIImage *)headerImage;
 

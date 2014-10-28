@@ -20,7 +20,7 @@
 
 @implementation OTCover
 
-- (OTCover*)initWithTableViewWithHeaderImage:(UIImage*)headerImage withOTCoverHeight:(CGFloat)height{
+- (OTCover*)initWithTableViewWithHeaderImage:(UIImage*)headerImage withOTCoverHeight:(CGFloat)height withTableViewStyle:(UITableViewStyle)TableViewStyle{
     
     CGRect bounds = [[UIScreen mainScreen] bounds];
     self = [[OTCover alloc] initWithFrame:bounds];
@@ -31,7 +31,7 @@
     
     self.OTCoverHeight = height;
     
-    self.tableView = [[UITableView alloc] initWithFrame:self.frame];
+    self.tableView = [[UITableView alloc] initWithFrame:self.frame style:TableViewStyle];
     self.tableView.tableHeaderView.backgroundColor = [UIColor clearColor];
     self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, bounds.size.width, height)];
     self.tableView.backgroundColor = [UIColor clearColor];

@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    OTCover *test = [[OTCover alloc] initWithTableViewWithHeaderImage:[UIImage imageNamed:@"image.png"] withOTCoverHeight:200];
+    OTCover *test = [[OTCover alloc] initWithTableViewWithHeaderImage:[UIImage imageNamed:@"image.png"] withOTCoverHeight:200 withTableViewStyle:UITableViewStylePlain];
     test.tableView.delegate = self;
     test.tableView.dataSource = self;
     [self.view addSubview:test];
