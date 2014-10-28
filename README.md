@@ -18,7 +18,7 @@ Usage
 ======
 for tableview 
 
-	 OTCover *test = [[OTCover alloc] initWithTableViewWithHeaderImage:[UIImage imageNamed:@"image.png"] withOTCoverHeight:200];
+	OTCover *test = [[OTCover alloc] initWithTableViewWithHeaderImage:[UIImage imageNamed:@"image.png"] withOTCoverHeight:200 withTableViewStyle:UITableViewStylePlain];
 	 
 for scrollview
 
